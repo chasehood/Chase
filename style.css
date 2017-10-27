@@ -1,25 +1,111 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+body {
+    font-family: 'Permanent Marker', cursive;
+    background-color: orangered;
+    color: white;
+    text-align: center;
+}
 
+.container {
+    margin: 0 auto;
+    width: 100%;
+    /*background-color: green;*/
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    font-size: 7px;
+    line-height: 1.5em
+}
+
+img {
+    position: relative;
+    /*left: 575px;*/
+    z-index: 1;
+    width: 90px;
+    top: 150px;
+}
+
+h1 {
+    font-size: 2em;
+    letter-spacing: 0.2em;
+}
+
+a {
+    color: gold;
+    font-size: 1.4em;
+    text-decoration: none;
+}
+
+@media (min-width: 374px) {
+    .content {
+        font-size: 8px;
+    }
+    img {
+        width: 108px;
+        top: 179px;
+    }
+}
+
+@media (min-width: 768px) {
+    .content {
+        font-size: 17px;
+    }
+    img {
+        width: 225px;
+        top: 369px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content {
+        font-size: 22px;
+    }
+    img {
+        width: 296px;
+        top: 491px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .content {
+        top: -223px;
+        font-size: 22px;
+    }
+    img {
+        top: 266px;
+        width: 288px;
+    }
+}
+
+
+/*
 body{ 
     font-family: 'Permanent Marker', cursive;
     background-color: orangered;
     color: white;
     text-align: center;
+}
+.container{
+    
+    margin: 0 auto;
+    width: 100%;
 
 }
 .content{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    position: absolute;
-    font-size: 1.3em;
-    width: 1440px;
-    top: 234px;
+    position: relative;
+    top: -206px;
+    z-index: 2;
+    width: 100%;
+    font-size: 130%;
     line-height: 1.5em
 }
 img{
-    margin-top: 288px;
-    z-index: -1;
+    position: relative;
+    top: 266px;
+    z-index: 1;
     width: 288px;
 }
 h1{
@@ -30,4 +116,4 @@ a{
     color: gold;
     font-size: 1.4em;
     text-decoration: none;
-}
+}*/
